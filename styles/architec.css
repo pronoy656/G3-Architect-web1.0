@@ -5,6 +5,7 @@
   }
   header{
     background: rgba(255, 144, 14, 0.10);
+   
   }
   .btn-primary{
     background-color: #FF900E;
@@ -62,7 +63,29 @@ font-weight: 700;
 .banner-image{
     /* width: 960px; */
     margin: 0px 240px;
+  
 }
 .banner-image img{
     width:  100%;
+}
+
+/* ---------------------Responsive media quries-------------------- */
+@media screen and (max-width: 576px) {
+    nav{
+        padding: 5px;
+        flex-direction: column;
+    }
+    .banner-image{
+        margin: 0px 0px;
+    }
+
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    nav{
+        padding: 5px;
+        flex-direction: column;
+    }
+    .banner-image{
+        margin: 0px 20px;
+    }
 }
