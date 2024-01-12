@@ -3,3 +3,66 @@
   *{
     font-family: 'Work Sans', sans-serif;
   }
+  header{
+    background: rgba(255, 144, 14, 0.10);
+  }
+  .btn-primary{
+    background-color: #FF900E;
+    border-radius: 8px;
+    border: none;
+    margin-top: 32px;
+    margin-bottom: 50px;
+    padding: 20px 24px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+
+  }
+  nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 228px;
+    align-items: center;
+  }
+  nav .title{
+    color: var(--Dark-01, #131313);
+font-size: 45px;
+font-weight: 700;
+
+  }
+  nav>ul{
+    display: flex;
+  }
+ nav li{
+    list-style: none;
+    margin-right: 30px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  nav li a{
+    text-decoration: none;
+    color: #424242;
+  }
+/* -------------------Banner section styles start-------------- */
+  .banner-content{
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .banner-content h1{
+    color: var(--Dark-01, #131313);
+    font-size: 64px;
+    font-weight: 700;
+  }
+  .banner-content p{
+    color: var(--Dark-03, #727272);
+    font-size: 16px;
+    font-weight: 400;
+  }
+.banner-image{
+    /* width: 960px; */
+    margin: 0px 240px;
+}
+.banner-image img{
+    width:  100%;
+}
