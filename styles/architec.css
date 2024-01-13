@@ -80,6 +80,8 @@ font-weight: 700;
     }
 
 }
+/* --------------------------MEdium devices responsive---------------------- */
+
 @media screen and (min-width: 576px) and (max-width: 992px) {
     nav{
         padding: 5px;
@@ -89,3 +91,47 @@ font-weight: 700;
         margin: 0px 20px;
     }
 }
+
+/* -------------------SEction 1 start--------------------------- */
+main{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.team-container{
+  display: flex;
+  align-items: center;
+}
+.team-img-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 85px;
+
+}
+.team-text{
+  padding: 76px;
+}
+.team-title{
+  font-size: 45px;
+}
+.quick-list{
+  color: var(--Dark-03, #727272);
+  font-weight: 500;
+}
+.of-our{
+  color: var(--Dark-01, #131313);
+  font-weight: 700;
+}
+.features{
+  color: #FF900E;
+  font-weight: 700;
+
+}
+.team-description{
+  color: var(--Dark-03, #727272);
+  font-size: 16px;
+  font-weight: 400;
+}
+  
+
+
