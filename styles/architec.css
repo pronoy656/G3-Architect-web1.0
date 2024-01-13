@@ -69,28 +69,7 @@ font-weight: 700;
     width:  100%;
 }
 
-/* ---------------------Responsive media quries-------------------- */
-@media screen and (max-width: 576px) {
-    nav{
-        padding: 5px;
-        flex-direction: column;
-    }
-    .banner-image{
-        margin: 0px 0px;
-    }
 
-}
-/* --------------------------MEdium devices responsive---------------------- */
-
-@media screen and (min-width: 576px) and (max-width: 992px) {
-    nav{
-        padding: 5px;
-        flex-direction: column;
-    }
-    .banner-image{
-        margin: 0px 20px;
-    }
-}
 
 /* -------------------SEction 1 start--------------------------- */
 main{
@@ -131,6 +110,36 @@ main{
   color: var(--Dark-03, #727272);
   font-size: 16px;
   font-weight: 400;
+}
+/* ---------------------Responsive media quries-------------------- */
+@media screen and (max-width: 576px) {
+  nav,
+  .team-container
+  {
+      padding: 5px;
+      flex-direction: column;
+  }
+  .team-text{
+    padding: 5px; 
+ }
+  .banner-image{
+      margin: 0px 0px;
+  }
+  .team-img-container{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+}
+/* --------------------------MEdium devices responsive---------------------- */
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  nav,.team-container{
+      padding: 5px;
+      flex-direction: column;
+  }
+  .banner-image{
+      margin: 0px 20px;
+  }
 }
   
 
