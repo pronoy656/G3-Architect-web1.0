@@ -111,6 +111,63 @@ main{
   font-size: 16px;
   font-weight: 400;
 }
+/* -----------------------section two 1.0 start----------------------- */
+.features-enjoy{
+  display: flex;
+  margin-top: 130px;
+  gap: 140px;
+}
+.features-enjoy .team-title{
+  border-left: 5px solid #FF900E;
+  padding-left: 21px;
+}
+.card{
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding: 30px;
+  border-radius: 8px;
+  background: #FFF;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.card-title{
+  color: var(--Dark-01, #131313);
+  font-size: 20px;
+  font-weight: 600;
+}
+.card-description{
+  color: var(--Dark-03, #727272);
+  font-size: 16px;
+  font-weight: 400;
+}
+.ten-year-badge{
+  border-radius: 8px;
+background: #FF900E;
+width: 342px;
+padding: 46px 42px;
+position: relative;
+bottom: 100px;
+
+}
+.ten-year-badge h2{
+  color: #FFF;
+  text-align: center;
+  font-size: 65px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.ten-year-badge p{
+  color: #FFF;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+.features-img img{
+  height: 90%;
+  margin-left: 50px;
+}
+
+
 /* --------------------Secytion two start------------------------- */
 .facts-card {
   display: flex;
@@ -160,7 +217,7 @@ margin-bottom: 15px;
 /* ---------------------Responsive media quries-------------------- */
 @media screen and (max-width: 576px) {
   nav,
-  .team-container,.facts-card
+  .team-container,.facts-card,.features-enjoy
   {
       padding: 5px;
       flex-direction: column;
@@ -181,6 +238,16 @@ margin-bottom: 15px;
     grid-template-columns: repeat(2, 1fr);
     gap: 55px;
   }
+  .features-enjoy{
+    margin: 20px
+  }
+  .features-img img{
+    width: 100%;
+    margin-left: 5px;
+  }
+  .ten-year-badge{
+    width: 270px;
+  }
   .footer{
     width: 100%;
   }
@@ -191,9 +258,12 @@ margin-bottom: 15px;
 /* --------------------------MEdium devices responsive---------------------- */
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
-  nav,.team-container{
+  nav,.team-container,{
       padding: 5px;
       flex-direction: column;
+  }
+  .features-enjoy{
+    flex-direction: column;
   }
   .banner-image{
       margin: 0px 20px;
