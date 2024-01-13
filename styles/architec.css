@@ -111,10 +111,45 @@ main{
   font-size: 16px;
   font-weight: 400;
 }
+/* --------------------Secytion two start------------------------- */
+.facts-card {
+  display: flex;
+  justify-content: space-around;
+}
+.facts-card .facts{
+  border-radius: 8px;
+border: 1px solid #FF900E;
+text-align: center;
+padding: 35px 35px;
+}
+.card-no{
+  color: var(--Dark-02, #424242);
+font-size: 45px;
+font-weight: 600;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+.card-text{
+  color: var(--Dark-03, #727272);
+font-size: 20px;
+font-weight: 600;
+margin-top: 10px;
+margin-bottom: 15px;
+}
+/* ----------------------------section3(sponser) start------------- */
+.sponser-description{
+  text-align: center;
+  margin-bottom: 50px;
+}
+.sponsors-img{
+  display:grid ;
+  grid-template-columns: repeat(5,1fr);
+  gap: 130px;
+}
 /* ---------------------Responsive media quries-------------------- */
 @media screen and (max-width: 576px) {
   nav,
-  .team-container
+  .team-container,.facts-card
   {
       padding: 5px;
       flex-direction: column;
@@ -128,6 +163,13 @@ main{
   .team-img-container{
     grid-template-columns: repeat(1, 1fr);
   }
+  .facts-card{
+    gap: 15px;
+  }
+  .sponsors-img{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 55px;
+  }
 
 }
 /* --------------------------MEdium devices responsive---------------------- */
@@ -140,6 +182,9 @@ main{
   .banner-image{
       margin: 0px 20px;
   }
+  .sponsors-img{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 65px 130px;
 }
   
 
