@@ -246,7 +246,7 @@ margin-bottom: 15px;
     margin-left: 0px;
   }
   .ten-year-badge{
-    width: 270px;
+    width: 210px;
   }
   .footer{
     width: 100%;
@@ -258,7 +258,7 @@ margin-bottom: 15px;
 /* --------------------------MEdium devices responsive---------------------- */
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
-  nav,.team-container,{
+  nav,.team-container{
       padding: 5px;
       flex-direction: column;
   }
@@ -275,6 +275,7 @@ margin-bottom: 15px;
 .footer{
  max-width:  100%;
   margin: 130px ;
+}
 }
   
 
